@@ -42,3 +42,7 @@ next-env.d.ts
 .contentlayer
 .react-email
 .turbo
+
+.github
+.husky
+.commitlintrc.json

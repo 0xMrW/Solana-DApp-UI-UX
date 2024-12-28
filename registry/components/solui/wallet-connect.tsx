@@ -142,15 +142,15 @@ export default function Connect() {
               <button
                 onClick={toggleShowAll}
                 className={`text-sm ${
-                  showAll ? "bg-gray-200 text-black/60" : "bg-black"
-                } text-white w-full py-2 rounded-lg flex items-center justify-center gap-2`}
+                  showAll ? "bg-gray-200 text-black" : "bg-black text-white"
+                } w-full py-2 rounded-lg flex items-center justify-center gap-2`}
               >
                 {showAll ? "Hide" : "More wallets"}
                 {showAll ? (
                   <EyeOff className="w-4" />
                 ) : (
                   <Image
-                    src={"https://svgshare.com/i/19pH.svg"}
+                    src="/registry/connect-wallet/more-wallets.svg"
                     width={40}
                     height={40}
                     alt="logos"

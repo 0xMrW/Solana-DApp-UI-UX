@@ -101,7 +101,7 @@ const TokenDropdown: React.FC = () => {
         <button
           type="button"
           onClick={() => setIsOpen(!isOpen)}
-          className="p-2 w-56 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-md shadow-sm flex items-center justify-between text-left focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors duration-200"
+          className="p-2 w-56 bg-white dark:bg-[#0f0f0f] border border-gray-300 dark:border-gray-700 rounded-md shadow-sm flex items-center justify-between text-left focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors duration-200"
         >
           {selectedToken ? (
             <div className="flex items-center">
@@ -136,7 +136,7 @@ const TokenDropdown: React.FC = () => {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -10 }}
               transition={{ duration: 0.2 }}
-              className="absolute z-10 w-56 mt-1 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-md shadow-lg"
+              className="absolute z-10 w-56 mt-1 bg-white dark:bg-black border border-gray-300 dark:border-gray-700 rounded-md shadow-lg"
             >
               <div className="p-2">
                 <input
@@ -144,7 +144,7 @@ const TokenDropdown: React.FC = () => {
                   placeholder="Search tokens..."
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
-                  className="w-full p-2 border border-gray-300 dark:border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:text-white transition-colors duration-200"
+                  className="w-full p-2 border border-gray-300 dark:border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-[#0f0f0f] dark:text-white transition-colors duration-200"
                 />
               </div>
               <ul className="custom-scrollbar max-h-60 overflow-y-auto">
@@ -170,7 +170,7 @@ const TokenDropdown: React.FC = () => {
                         <button
                           type="button"
                           onClick={() => handleSelectToken(token)}
-                          className="w-full p-2 text-left hover:bg-gray-100 dark:hover:bg-gray-700 flex items-center transition-colors duration-200"
+                          className="w-full p-2 text-left hover:bg-gray-100 dark:hover:bg-[#0f0f0f] flex items-center transition-colors duration-200"
                         >
                           <img
                             src={token.logoURI}
@@ -211,15 +211,6 @@ const TokenDropdown: React.FC = () => {
           )}
         </AnimatePresence>
       </div>
-      {/* {selectedToken && (
-        <motion.div
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="mt-4 text-lg font-semibold dark:text-white"
-        >
-          Selected Token: {selectedToken.name}
-        </motion.div>
-      )} */}
     </div>
   );
 };

@@ -4,11 +4,11 @@ export default function PriorityModalDemo() {
   return (
     <>
       <NftCard
-        nftImage="https://svgshare.com/i/19nc.svg"
+        nftImage="/registry/nft/nft.svg"
         name="#SoliXel 9962"
         collectionName="SOL NFTs"
         cost="2.4"
-        currency="https://svgshare.com/i/19nK.svg"
+        currency="/registry/nft/nft-sol.svg"
       />
     </>
   );
