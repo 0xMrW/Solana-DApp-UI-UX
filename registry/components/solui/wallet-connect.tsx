@@ -79,7 +79,12 @@ export default function Connect() {
         </div>
 
         {isOpen && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center backdrop-blur-lg">
+          <motion.div
+            className="fixed inset-0 z-50 flex items-center justify-center backdrop-blur-lg"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.2 }}
+          >
             <div className="bg-white rounded-lg shadow-lg p-6 max-w-sm w-full">
               <div className="flex justify-between items-center mb-4">
                 <h2 className="text-xl font-semibold text-black">Connect Wallet</h2>
@@ -158,7 +163,7 @@ export default function Connect() {
                 )}
               </button>
             </div>
-          </div>
+          </motion.div>
         )}
       </div>
     );
