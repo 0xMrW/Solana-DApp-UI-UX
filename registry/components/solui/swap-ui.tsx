@@ -31,7 +31,7 @@ const TokenDropdown: React.FC<{
   };
 
   return (
-    <div className="relative z-20">
+    <div className="relative">
       <button
         type="button"
         onClick={() => setIsOpen(!isOpen)}
@@ -73,7 +73,7 @@ const TokenDropdown: React.FC<{
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -10 }}
           transition={{ duration: 0.2 }}
-          className="absolute z-10 w-full mt-1 bg-white border border-gray-300 rounded-md shadow-lg"
+          className="absolute z-10 w-full mt-1 bg-white border border-gray-300 rounded-md shadow-lg max-h-[300px] overflow-y-auto"
         >
           <ul
             className="max-h-60 overflow-y-auto"
