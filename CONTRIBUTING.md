@@ -2,42 +2,36 @@
 
 Thank you for your interest in contributing to SolUI! We appreciate your support and look forward to your contributions. This guide will help you understand the directory structure and provide detailed instructions on how to add a new component to SolUI.
 
-**You only need to change 5 files to add a new component or effect** and it only takes around 10 minutes of work!
-
-Once done, open a pull request from your forked repo to the main repo [here](https://github.com/Not-Sarthak/sol-ui/compare).
-
 ## Getting Started
 
 ### Fork and Clone the Repository
 
-1. **Fork this repository**  
-   Click [here](https://github.com/Not-Sarthak/sol-ui/fork) to fork the repository.
 
-2. **Clone your forked repository to your local machine**
+1. **Clone your forked repository to your local machine**
 
    ```bash
    git clone https://github.com/<YOUR_USERNAME>/sol-ui.git
    ```
 
-3. **Navigate to the project directory**
+2. **Navigate to the project directory**
 
    ```bash
    cd sol-ui
    ```
 
-4. **Create a new branch for your changes**
+3. **Create a new branch for your changes**
 
    ```bash
    git checkout -b my-new-branch
    ```
 
-5. **Install dependencies**
+4. **Install dependencies**
 
    ```bash
    pnpm i
    ```
 
-6. **Create a `.env.local` file**
+5. **Create a `.env.local` file**
 
    ```bash
    touch .env.local && echo "NEXT_PUBLIC_APP_URL=http://localhost:3000" > .env.local
@@ -104,9 +98,9 @@ Create an MDX file for documenting your component in `content/docs/components/ex
 ````md
 ---
 title: Example Component
-date: 2024-09-02
+date: 2025-02-12
 description: Example component for Sol UI
-author: sarthak
+author: apollum
 published: true
 ---
 

@@ -5,10 +5,10 @@ export const siteConfig = {
   description:
     "",
   links: {
-    twitter: "https://x.com/0xSarthak13",
+    twitter: "",
     discord: "",
-    github: "https://github.com/Not-Sarthak/sol-ui",
-    instagram: "https://x.com/0xSarthak13",
+    github: "",
+    instagram: "",
   },
   keywords: [
     "React",

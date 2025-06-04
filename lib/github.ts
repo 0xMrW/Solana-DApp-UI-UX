@@ -41,7 +41,3 @@ export function getGitHubIssueUrl(params: GitHubIssueUrlParams): string {
 
   return `${baseUrl}?${urlParams.toString()}`;
 }
-
-export function getGithubFileUrl(slug: string) {
-  return `https://github.com/Not-Sarthak/sol-ui/blob/main/content${slug === "/docs" ? "/docs/index" : slug}.mdx`;
-}

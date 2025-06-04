@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Doc } from "contentlayer/generated";
 import { BugIcon, LightbulbIcon, PencilIcon } from "lucide-react";
 
-import { getGithubFileUrl, getGitHubIssueUrl } from "@/lib/github";
+import { getGitHubIssueUrl } from "@/lib/github";
 
 export function Contribute({ doc }: { doc: Doc }) {
   const contributeLinks = [
@@ -27,11 +27,6 @@ export function Contribute({ doc }: { doc: Doc }) {
         labels: ["enhancement"],
         template: "feature_request.md",
       }),
-    },
-    {
-      text: "Edit this page",
-      icon: PencilIcon,
-      href: getGithubFileUrl(doc.slug),
     },
   ];
 
