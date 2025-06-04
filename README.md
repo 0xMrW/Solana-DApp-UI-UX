@@ -30,10 +30,3 @@ We're always looking to improve! Here are some features we're considering adding
 1. **npm Package**: Easily install the component library via npm.
 2. **Solana Icon Set**: Icons for tokens, protocols, wallets, etc.
 3. **Abstracted Hooks**: Reusable hooks for common Solana interactions.
-
-## License
-
-Licensed under the MIT license.
-
----
-Brought to you by [sarthak](https://x.com/0xSarthak13).
